@@ -7,6 +7,7 @@ html, body {
     width: 700px;
     height: 1000px;
     display: grid;
+    grid-template-rows: 20px 10px 20px auto auto auto 10px 30px 30px 20px;  ;
     border: 1px dotted red;
 }
 
@@ -41,13 +42,13 @@ html, body {
 }
 
 .receipe {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     border: 1px dotted blue;
     height: auto;
 }
 
 .bio-button {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     border: 1px dotted blue;
     height: auto;
 }
