@@ -15,14 +15,16 @@ html, body {
 
 header {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: center;
     height: auto;
 }
 
-/* .header-logo {
-I think I need something for the columns within the header row here
-} */
+.header-logo {
+    flex: 50%;
+/* I think I need something for the columns within the header row here */
+}
 
 .head-logo-text {
     font-family: cursive;
@@ -56,13 +58,24 @@ I think I need something for the columns within the header row here
     margin-bottom: 15px;
 }
 
+.pizza-post {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .chocolate-pizza-text {
     font-size: 25px;
 }
 
-.post-date, .print {
+.post-date {
     font-size: 10px;
     color: lightgrey;
+}
+
+.print {
+    font-size: 10px;
+    color: lightgrey;
+    flex: 50%;
 }
 
 .chocolate-pizza-img {
