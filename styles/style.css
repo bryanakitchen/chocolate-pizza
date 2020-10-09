@@ -7,6 +7,8 @@ html, body {
     width: 700px;
     height: auto;
     display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: 50px 30px 50px 515px 250px 300px 10px 30px 30px 20px;
     justify-content: center;
 }
@@ -39,6 +41,7 @@ I think I need something for the columns within the header row here
     align-items: center;
 }
 
+/* the hr image disappeared */
 .hr {
     grid-template-columns: auto;
     height: auto;
@@ -49,8 +52,8 @@ I think I need something for the columns within the header row here
     /* grid-template-columns: auto auto; */
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: auto;
+    align-content: center;
+    margin-bottom: 15px;
 }
 
 .chocolate-pizza-text {
@@ -71,7 +74,8 @@ I think I need something for the columns within the header row here
 .instructions {
     grid-template-columns: auto;
     height: auto;
-    margin: 20px
+    margin: 20px;
+    color: lightgrey;
 }
 
 p {
@@ -149,8 +153,9 @@ button {
     
 }
 
-/* I can't figure out why this test is floating at the top of the image. */
+/* I can't figure out why this text is floating on top of the image. */
 .footer {
-    grid-template-columns: auto;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
