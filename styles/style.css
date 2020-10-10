@@ -9,28 +9,20 @@ html, body {
     display: grid;
     margin-top: 50px;
     grid-template-columns: 1fr;
-    /* grid-template-columns: 1fr 1fr; */
     grid-template-rows: 50px 20px 50px 515px 250px 300px 10px 30px 30px 20px 40px 20px;
     justify-content: center;
 }
 
 header {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: center;
     height: auto;
-    /* border-image-source: url("/assets/hr-img.png");
-    border-image-repeat: repeat; */
-    /* border-image-width: 5px; */
-    /* border-bottom: 5px solid transparent; */
-    /* border-image-repeat: 5px solid url("/assets/hr-img.png") 30 repeat; */
-    /* border-image: url("/assets/hr-img.png") 0 0 0 3 fill repeat; */
+    margin-bottom: 20px;
 }
 
 .header-logo {
     flex: 50%;
-/* I think I need something for the columns within the header row here */
 }
 
 .head-logo-text {
@@ -45,7 +37,7 @@ header {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 10px;
     margin-left: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
 }
 
@@ -56,9 +48,8 @@ header {
     align-items: center;
 }
 
-/* the hr image disappeared */
 .hr {
-    background-image: url("/assets/hr-img.png");
+    background-image: url("/assets-2/hr-img.png");
     background-repeat: repeat;
     margin-top: 10px;
     width: 100%;
@@ -81,7 +72,7 @@ header {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 34px;
-    padding-top: 25px;
+    margin-top: 10px;
 }
 
 .post-date {
@@ -124,45 +115,34 @@ p {
     grid-template-columns: auto auto;
     font-family: 'Chilanka', cursive;
     height: 300px;
-    background-image: url("/assets/list-bg.png");
+    background-image: url("/assets-2/list-bg.png");
     display: flex;
     flex-direction: row;
-    justify-content: left;
     align-items: center;
     margin: 20px;
 }
 
-/* I can't figure out how to get the list to wrap */
 .receipe-left {
-    /* display: flex;
-    flex-direction: row;
-    align-items: left; */
     padding-left: 10px;
     font-family: 'Chilanka', cursive;
     margin: 60px;
-    /* width: 100px; */
 }
 
 .receipe-right {
-    /* display: flex;
-    flex-wrap: column;
-    align-items: left; */
     margin-right: 30px;
-
-    /* width: 100px; */
 }
 
 input {
     display: flex;
     flex-wrap: column;
-    align-items: left;
 }
+
 .bio-button {
-    /* grid-template-columns: auto auto; */
     display: flex;
     flex-direction: row;
     align-items: center;
     height: auto;
+    margin-top: 10px;
 }
 
 .van-name {
@@ -189,8 +169,8 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 17px;
-  }
-/* when it's centered the hr lines disappear */
+}
+
 .silverware-hr {
     display: flex;
     flex-direction: row;
@@ -208,7 +188,7 @@ button {
     width: 300px;
     grid-row: 11/ span 1;
 }
-/* I can't figure out why this text is floating on top of the image. */
+
 footer {
     display: flex;
     flex-direction: row;
@@ -217,5 +197,5 @@ footer {
     grid-row: 15/ span 1;
     font-size: 10px;
     color: lightgrey;
-    margin-top: 50px;
+    margin-top: 40px;
 }
