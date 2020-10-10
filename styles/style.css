@@ -9,7 +9,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-columns: 1fr 1fr; */
-    grid-template-rows: 50px 20px 50px 515px 250px 300px 10px 30px 30px 20px 20px 20px;
+    grid-template-rows: 50px 20px 50px 515px 250px 300px 10px 30px 30px 20px 40px 20px;
     justify-content: center;
 }
 
@@ -196,7 +196,7 @@ button {
     grid-row: 11/ span 1;
 }
 /* I can't figure out why this text is floating on top of the image. */
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
