@@ -13,7 +13,6 @@ html, body {
     justify-content: center;
 }
 
-
 header {
     display: flex;
     /* flex-wrap: wrap; */
@@ -131,8 +130,6 @@ p {
     /* display: flex;
     flex-wrap: column;
     align-items: left; */
-    padding-left: 10px;
-    font-family: 'Chilanka', cursive;
     margin-right: 30px;
     /* width: 100px; */
 }
