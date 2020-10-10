@@ -49,7 +49,7 @@ header {
 }
 
 .hr {
-    background-image: url("/assets-2/hr-img.png");
+    background-image: url("assets-2/hr-img.png");
     background-repeat: repeat;
     margin-top: 10px;
     width: 100%;
@@ -115,7 +115,7 @@ p {
     grid-template-columns: auto auto;
     font-family: 'Chilanka', cursive;
     height: 300px;
-    background-image: url("/assets-2/list-bg.png");
+    background-image: url("assets-2/list-bg.png");
     display: flex;
     flex-direction: row;
     align-items: center;
