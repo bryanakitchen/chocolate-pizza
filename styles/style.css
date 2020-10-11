@@ -1,6 +1,6 @@
 html, body {
     padding: 0px;
-    margin: 0px 20px;
+    margin: auto;
 }
 
 .grid {
@@ -9,7 +9,7 @@ html, body {
     display: grid;
     margin-top: 50px;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 20px 50px 515px 250px 300px 10px 30px 30px 20px 40px 20px 20px 20px;
+    grid-template-rows: 50px 50px 55px 470px 250px 320px 50px 100px 50px 50px;
     justify-content: center;
 }
 
@@ -17,8 +17,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: auto;
-    margin-bottom: 20px;
+    grid-row: 1/ span 1;
 }
 
 .header-logo {
@@ -26,19 +25,19 @@ header {
 }
 
 .head-logo-text {
-    /* font-family: 'Oswald', sans-serif; */
     font-family: 'Yellowtail', cursive;
     font-weight: bolder;
     font-size: 2rem;
     margin-left: 5px;
-    margin-top: 30px
+    align-items: center;
+    
 }
 .head-logo-sub-text {
     font-family: 'Saira Condensed', sans-serif;
     font-size: 10px;
     margin-left: 5px;
-    margin-bottom: 40px;
-
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .head-social {
@@ -55,17 +54,19 @@ header {
 .hr {
     background-image: url("/assets-2/hr-img.png");
     background-repeat: repeat;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100%;
     height: 10px;
+    grid-row: 2/ span 1;
 }
 
 .chocolate-print-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
     height: auto;
-    margin-bottom: 15px;
+    align-items: baseline;
+    grid-row: 3/ span 1;
+    
 }
 
 .choco-text-sub-text {
@@ -76,7 +77,6 @@ header {
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
     font-size: 34px;
-    margin-top: 10px;
 }
 
 .post-date {
@@ -92,19 +92,19 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
-    padding-top:50px;
 }
 
 .chocolate-pizza-img {
     grid-template-columns: auto;
     height: auto;
     width: 700px;
+    margin-top: 10px;
+    grid-row: 4/ span 1;
 }
 
 .instructions {
     font-family: 'Times', Times, serif;
-    grid-template-columns: auto;
+    grid-row: 5/ span 1;
     height: auto;
     margin: 20px;
     color: rgb(136, 136, 136);
@@ -116,7 +116,6 @@ p {
 }
 
 .receipe {
-    grid-template-columns: auto auto;
     font-family: 'Chilanka', cursive;
     height: 300px;
     background-image: url("/assets-2/list-bg.png");
@@ -124,23 +123,64 @@ p {
     flex-direction: row;
     align-items: center;
     margin: 20px;
+    grid-row: 6/ span 1;
 }
 
 .receipe-left {
     font-family: 'Chilanka', cursive;
-    margin: 60px;
-    /* display: flex;
-    flex-direction: column; */
+    margin: 50px;
 }
 
+.r-1 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-3 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-4 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-5 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-6 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+.r-7 {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+}
+
+/* I only did one side because there has got to be a better way to accomplish this. */
 .receipe-right {
     margin-right: 30px;
-    /* width: 200px; */
+    /* the below code does not work */
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3px; */
 }
 
 input {
     display: flex;
     flex-direction: column;
+    margin-right: 12px;
 }
 
 .bio-button {
@@ -149,6 +189,7 @@ input {
     align-items: center;
     height: auto;
     margin-top: 10px;
+    grid-row: 8/ span 1;
 }
 
 .van-name {
@@ -181,28 +222,28 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    grid-row: 11/ span 1;
+    grid-row: 8/ span 1;
     margin-top: 45px;
     
 }
 
 .hr-left {
     width: 300px;
-    grid-row: 11/ span 1;
+    grid-row: 8/ span 1;
 }
 
 .hr-right {
     width: 300px;
-    grid-row: 11/ span 1;
+    grid-row: 8/ span 1;
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    grid-row: 17/ span 1;
+    /* align-items: center; */
+    grid-row: 10/ span 1;
     font-size: 10px;
     color: lightgrey;
-    margin-top: 30px;
+    /* margin: 30px 0px; */
 }
