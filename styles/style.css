@@ -109,14 +109,13 @@ header {
     grid-row: 5/ span 1;
     grid-column: 1/ span 2;
     font-family: 'Times', Times, serif;
-    height: auto;
-    margin: 20px;
+    margin-bottom: 10px;
     color: rgb(136, 136, 136);
 }
 
 p {
     text-indent: 30px;
-    margin: 15px 20px;
+    margin: 15px 0px;
 }
 
 .receipe {
@@ -139,6 +138,7 @@ p {
 .r-inline {
     display: flex;
     flex-direction: row;
+    /* justify-self: flex-start; */
     padding: 4px;
 }
 
@@ -189,7 +189,7 @@ button {
 }
 
 .silverware-hr {
-    grid-row: 8/ span 1;
+    grid-row: 9/ span 1;
     grid-column: 1/ span 2;
     display: flex;
     flex-direction: row;
@@ -199,18 +199,19 @@ button {
 }
 
 .hr-left {
-    grid-row: 8/ span 1;
+    grid-row: 9/ span 1;
     width: 300px;
 }
 
 .hr-right {
-    grid-row: 8/ span 1;
+    grid-row: 9/ span 1;
     width: 300px;
 }
 
 footer {
     grid-row: 10/ span 1;
     grid-column: 1/ span 2;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     font-size: 10px;
